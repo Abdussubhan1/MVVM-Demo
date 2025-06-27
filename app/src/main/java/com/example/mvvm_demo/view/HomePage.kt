@@ -26,7 +26,7 @@ fun HomePage(viewModel: HomeViewModel) {
         }
         if (isLoading.value == true) {
             Text(text = "Loading...")
-        }else{
+        } else {
             userData.value?.name?.let {
                 Text("Name: $it")
             }
